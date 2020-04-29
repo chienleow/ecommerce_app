@@ -2,6 +2,11 @@ eCommerce CLI App Steps
 Draft 2
 - Hello welcome to eCommerce Scouting App!
 - Display a list of categories
+1. Arts
+2. Clothings
+3. Shoes
+4. Collectables
+5. Accessories
 - Please enter the number of the category you want to search for
 - Here are the titles and prices of the listings with the category entered by default (top 50 listings, only the first page matters)
 - Sort by pricing, highest to lowest, vice versa
@@ -14,3 +19,6 @@ Classes
 CLI - controller - communicates with my user
 Listings - where objects are created and stored for user display
 API - bring in external api here, instantiate my objects
+
+Questions:
+Using API

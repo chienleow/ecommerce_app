@@ -2,17 +2,41 @@ class EcommerceApp::CLI
 
     def start
         puts "Welcome to The eCommerce Scouting App!"
-        EcommerceApp::API.get_category
+        until input = "exit"
         category_list
+        get_user_category
+        get_listing_for(category)
+        user_sort_listing_by
+        sort_by_price(input)
+        end
+        goodbye
     end
 
     def category_list
-        ## a list of category needs to print out here
+        category = EcommerceApp::API.get_category
         puts "\nPlease enter the category number you want to search for:"
-        input = gets.strip
-        ## the number list if else way of doing it
-        else
-            invalid_input
+    end
+
+    def get_user_category
+        input = gets.strip.to_i
+        # get number from X to X, if invalid, run invalid_input method
+    end
+
+    def get_listing_for(category)
+        puts "Here are the listings and their prices in #{category}."
+        listings = EcommerceApp::API.get_listing
+    end
+
+    def user_sort_listing_by
+        puts "/nSort listings by highest to lowest price, type '1' /nSort listings by lowest to highest price, type '2'."
+        input = gets.strip.to_i
+    end
+
+    def sort_by_price(input)
+        if input = 1
+            # sort listings by prices, highest to lowest
+        else input = 2
+            # sort listings by prices, lowest to highest
         end
     end
 
@@ -21,8 +45,9 @@ class EcommerceApp::CLI
         category_list
     end
 
-    def selected_category(category)
-        puts "Here are the listings and their prices in #{category}."
+    def next_step
+        puts "Type 'exit' to quit app or hit any key to choose a new category."
+        input = gets.strip
     end
 
     def goodbye

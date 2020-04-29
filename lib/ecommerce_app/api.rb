@@ -5,6 +5,7 @@ class EcommerceApp::API
     end
 
     def self.get_listing
+        ##listings with their titles and prices
         
     end
 
