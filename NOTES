@@ -1,11 +1,14 @@
 eCommerce CLI App Steps
 Draft 2
-Hello welcome to eCommerce Scouting App!
-Display a list of categories
-Please enter the number of the category you want to search for
-Here are the titles and prices of the listings with the category entered by default (top 50 listings, only the first page matters)
-Sort by pricing, highest to lowest, vice versa
-You can go back to (a) default listing positions, (b) search for another category, or (c) exit the app
+- Hello welcome to eCommerce Scouting App!
+- Display a list of categories
+- Please enter the number of the category you want to search for
+- Here are the titles and prices of the listings with the category entered by default (top 50 listings, only the first page matters)
+- Sort by pricing, highest to lowest, vice versa
+- You can go back to 
+(a) default listing positions
+(b) search for another category, or 
+(c) exit the app
 
 Classes
 CLI - controller - communicates with my user
