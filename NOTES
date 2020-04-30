@@ -21,4 +21,5 @@ Listings - where objects are created and stored for user display
 API - bring in external api here, instantiate my objects
 
 Questions:
-Using API
+.env
+request a new API key

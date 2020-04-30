@@ -3,11 +3,13 @@ class EcommerceApp::CLI
     def start
         puts "Welcome to The eCommerce Scouting App!"
         until input = "exit"
+        EcommerceApp::API.get_category    
         category_list
         get_user_category
         get_listing_for(category)
         user_sort_listing_by
         sort_by_price(input)
+        next_step
         end
         goodbye
     end
