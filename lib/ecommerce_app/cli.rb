@@ -1,25 +1,24 @@
 class EcommerceApp::CLI
 
     def start
-        puts "Welcome to The eCommerce Scouting App!"
-        until input = "exit"
-        EcommerceApp::API.get_category    
+        puts "\nWelcome to The eCommerce Scouting App!"
         category_list
-        get_user_category
+        user_category(input)
         get_listing_for(category)
-        user_sort_listing_by
-        sort_by_price(input)
-        next_step
-        end
-        goodbye
+        
+        
+        # until input = "exit"
+        # end
+        # goodbye
     end
 
     def category_list
-        category = EcommerceApp::API.get_category
+        puts "\nHere is a list of eBay categories:"
+        EcommerceApp::API.get_category
         puts "\nPlease enter the category number you want to search for:"
     end
 
-    def get_user_category
+    def user_category(input)
         input = gets.strip.to_i
         # get number from X to X, if invalid, run invalid_input method
     end
