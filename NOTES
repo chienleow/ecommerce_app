@@ -17,7 +17,7 @@ Draft 2
 
 Classes
 CLI - controller - communicates with my user
-Listings - where objects are created and stored for user display
+Ebay - where objects are created and stored for user display
 API - bring in external api here, instantiate my objects
 
 To do:
