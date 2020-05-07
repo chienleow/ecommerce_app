@@ -6,7 +6,6 @@ class EcommerceApp::CLI
         # user_category(input)
         # get_listing_for(category)
 
-        
         # next step
         # until input = "exit"
         # end
@@ -16,6 +15,10 @@ class EcommerceApp::CLI
     def category_list
         puts "\nHere is a list of eBay categories:"
         EcommerceApp::API.get_category
+        categories = EcommerceApp::Category.all
+        categories.each.with_index(1) do |item, index|
+            puts "#{index}. #{item.category_name} (#{item.category_id})"
+        end
         puts "\nPlease enter the category number you want to search for:"
     end
 

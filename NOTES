@@ -21,49 +21,8 @@ Ebay - where objects are created and stored for user display
 API - bring in external api here, instantiate my objects
 
 To do:
-1. remove first "Root, -1"
+DONE 1. remove first "Root, -1"
 2. add color to CLI, easier for users to see
 3. REMEMBER to validate input
 4. display prices (OPTIONAL)
-
-
-Questions to ask:
-1. my API keys are too long
-2. relationship between Ebay and other classes
-
-
-
-2. Antiques (20081)
-3. Art (550)
-4. Baby (2984)
-5. Books (267)
-6. Business & Industrial (12576)
-7. Cameras & Photo (625)
-8. Cell Phones & Accessories (15032)
-9. Clothing, Shoes & Accessories (11450)
-10. Coins & Paper Money (11116)
-11. Collectibles (1)
-12. Computers/Tablets & Networking (58058)
-13. Consumer Electronics (293)
-14. Crafts (14339)
-15. Dolls & Bears (237)
-16. DVDs & Movies (11232)
-17. Entertainment Memorabilia (45100)
-18. Gift Cards & Coupons (172008)
-19. Health & Beauty (26395)
-20. Home & Garden (11700)
-21. Jewelry & Watches (281)
-22. Music (11233)
-23. Musical Instruments & Gear (619)
-24. Pet Supplies (1281)
-25. Pottery & Glass (870)
-26. Real Estate (10542)
-27. Specialty Services (316)
-28. Sporting Goods (888)
-29. Sports Mem, Cards & Fan Shop (64482)
-30. Stamps (260)
-31. Tickets & Experiences (1305)
-32. Toys & Hobbies (220)
-33. Travel (3252)
-34. Video Games & Consoles (1249)
-35. Everything Else (99)
+5. hide category_id from list, its too confusing
