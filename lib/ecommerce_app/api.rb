@@ -3,6 +3,7 @@ class EcommerceApp::API
         response = HTTParty.get("http://open.api.ebay.com/Shopping?callname=GetCategoryInfo&appid=#{ENV['EBAY_API_KEY']}&siteid=0&CategoryID=-1&version=1141&IncludeSelector=ChildCategories")
         response["GetCategoryInfoResponse"]["CategoryArray"]["Category"].each.with_index(1) do |item, index|
             puts "#{index}. #{item["CategoryName"]} (#{item["CategoryID"]})"
+            EcommerceApp::Ebay.new(response)
         end
     end
 

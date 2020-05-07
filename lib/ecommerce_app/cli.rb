@@ -3,8 +3,8 @@ class EcommerceApp::CLI
     def start
         puts "\nWelcome to The eCommerce Scouting App!"
         category_list
-        user_category(input)
-        get_listing_for(category)
+        # user_category(input)
+        # get_listing_for(category)
 
         
         # next step
@@ -25,7 +25,7 @@ class EcommerceApp::CLI
     end
 
     def get_listing_for(category)
-        puts "Here are the listings and their prices in #{category}."
+        puts "\nHere are the listings and their titles in #{category}."
         listings = EcommerceApp::API.get_listing
     end
 
