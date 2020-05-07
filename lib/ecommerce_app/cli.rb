@@ -44,7 +44,6 @@ class EcommerceApp::CLI
 
     def valid_input(user_input)
         @user_input <= EcommerceApp::Category.all.length && @user_input > 0
-        # binding.pry
     end 
 
     def invalid_input
