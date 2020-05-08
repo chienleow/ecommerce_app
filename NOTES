@@ -21,8 +21,4 @@ Ebay - where objects are created and stored for user display
 API - bring in external api here, instantiate my objects
 
 To do:
-DONE 1. remove first "Root, -1"
-2. add color to CLI, easier for users to see
-3. REMEMBER to validate input
-4. display prices (OPTIONAL)
-5. hide category_id from list, its too confusing
+- duplicates

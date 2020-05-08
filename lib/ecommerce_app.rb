@@ -6,6 +6,7 @@ require_relative "./ecommerce_app/listing"
 require "httparty"
 require "pry"
 require "dotenv/load"
+require "colorize"
 
 
 module EcommerceApp

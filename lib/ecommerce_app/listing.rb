@@ -11,7 +11,7 @@ class EcommerceApp::Listing
 
     def save
         @@all << self
-    end
+    end 
 
     def self.all
         @@all

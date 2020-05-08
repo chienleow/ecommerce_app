@@ -4,5 +4,3 @@ require_relative "../lib/ecommerce_app"
 
 EcommerceApp::CLI.new.start
 
-# EcommerceApp::API.get_by_name
-
