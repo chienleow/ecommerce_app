@@ -15,6 +15,7 @@ class EcommerceApp::Category
     end
 
     def self.all
+        EcommerceApp::API.get_category if @@all.empty?
         @@all
     end
 

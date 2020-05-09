@@ -8,12 +8,12 @@ class EcommerceApp::CLI
             next_step
         end
         goodbye
-        # binding.pry
     end
+
 
     def category_list
         puts "\nHere is a list of eBay categories:".colorize(:blue)
-        EcommerceApp::API.get_category
+        # EcommerceApp::API.get_category
         ## put some conditions here to get data only once
         categories = EcommerceApp::Category.all
         categories.each.with_index(1) do |item, index|
