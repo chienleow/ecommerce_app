@@ -1,20 +1,19 @@
 class EcommerceApp::CLI
 
     def start
-        puts "\nWelcome to The eCommerce Scouting App!".colorize(:dark_blue)
+        puts "\nWelcome to The eCommerce Scouting App!".colorize(:magenta)
         until @user_input_2 == "exit"
             category_list
             get_user_input
+            listing_list
             next_step
         end
         goodbye
     end
 
-
     def category_list
         puts "\nHere is a list of eBay categories:".colorize(:blue)
-        # EcommerceApp::API.get_category
-        ## put some conditions here to get data only once
+        # EcommerceApp::API.get_category ## NOTES: had to move this to category.rb to prevent duplicates
         categories = EcommerceApp::Category.all
         categories.each.with_index(1) do |item, index|
             puts "#{index}. #{item.category_name}"
@@ -25,7 +24,7 @@ class EcommerceApp::CLI
 
     def listing_list
         category = EcommerceApp::Category.find(@user_input)
-        puts "\nHere are the listings and their titles in category:'#{category.category_name}':".colorize(:red)
+        puts "\nHere are the listings and their titles in category:'#{category.category_name}':".colorize(:light_blue)
         EcommerceApp::API.get_listing(category.category_id)
         listings = EcommerceApp::Listing.all
         listings.each.with_index(1) do |item, index|
@@ -35,10 +34,9 @@ class EcommerceApp::CLI
 
     def get_user_input
         @user_input = gets.strip.to_i
-        if valid_input(@user_input)
-            listing_list
-        else 
+        until valid_input(@user_input)
             invalid_input
+            @user_input = gets.strip.to_i
         end
     end
 
@@ -47,18 +45,12 @@ class EcommerceApp::CLI
     end 
 
     def invalid_input
-        puts "\nSorry, input error, please try again."
-        category_list
+        puts "\nSorry, input error, please try again.".colorize(:red)
     end
 
     def next_step
         puts "\nType 'exit' to quit app or hit any key to choose a new category.".colorize(:yellow)
         @user_input_2 = gets.strip
-        # if @user_input_2 = "exit"
-        #     goodbye
-        # else
-
-
     end
 
     def goodbye
