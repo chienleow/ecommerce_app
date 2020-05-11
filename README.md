@@ -21,7 +21,8 @@ Or install it yourself as:
 ## Usage
 
 To run Ecommerce App from your command line, type the below and follow the on screen prompts.
-    $ bin/executable
+    ``` $ bin/executable
+    ```
 
 ## Development
 
