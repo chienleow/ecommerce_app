@@ -1,8 +1,6 @@
 # EcommerceApp
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ecommerce_app`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Welcome to the Ecommerce App! This is a Ruby gem with a CLI to view and navigate [eBay](https://www.ebay.com/) categories and the listing titles from each categories.
 
 ## Installation
 
@@ -22,7 +20,8 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To run Ecommerce App from your command line, type the below and follow the on screen prompts.
+    $ bin/executable
 
 ## Development
 
