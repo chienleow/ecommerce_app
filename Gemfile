@@ -5,5 +5,7 @@ source "https://rubygems.org"
 
 gem "httparty"
 gem "pry"
+gem "dotenv"
+gem "colorize"
 
 gem "rake", "~> 12.0"
