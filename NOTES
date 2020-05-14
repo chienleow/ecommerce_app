@@ -19,3 +19,6 @@ Classes
 CLI - controller - communicates with my user
 Ebay - where objects are created and stored for user display
 API - bring in external api here, instantiate my objects
+
+
+API >> listing.rb >> category.listings

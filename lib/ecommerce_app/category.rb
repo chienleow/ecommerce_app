@@ -1,12 +1,13 @@
 class EcommerceApp::Category
 
-    attr_accessor :category_name, :category_id
+    attr_accessor :category_name, :category_id, :listings
 
     @@all = []
 
     def initialize(category_name, category_id)
         @category_name = category_name
         @category_id = category_id
+        @listings = []
         save
     end
 

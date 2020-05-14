@@ -25,12 +25,14 @@ class EcommerceApp::CLI
     def listing_list
         category = EcommerceApp::Category.find(@user_input)
         puts "\nHere are the listings and their titles in category:'#{category.category_name}':".colorize(:light_blue)
-        EcommerceApp::API.get_listing(category.category_id)
-        listings = EcommerceApp::Listing.all
+        EcommerceApp::API.get_listing(category)
+        listings = category.listings
         listings.each.with_index(1) do |item, index|
             puts "#{index}. #{item.title}"
         end
     end
+
+    #refresh listings method or line
 
     def get_user_input
         @user_input = gets.strip.to_i

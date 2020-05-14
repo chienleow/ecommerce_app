@@ -10,11 +10,12 @@ class EcommerceApp::API
         end
     end
 
-    def self.get_listing(category_id)
-        response_2 = HTTParty.get("https://svcs.ebay.com/services/search/FindingService/v1?OPERATION-NAME=findItemsByCategory&SERVICE-VERSION=1.0.0&SECURITY-APPNAME=#{ENV['EBAY_API_KEY']}&RESPONSE-DATA-FORMAT=XML&REST-PAYLOAD&categoryId=#{category_id}&paginationInput.entriesPerPage=10")
+    def self.get_listing(category)
+        response_2 = HTTParty.get("https://svcs.ebay.com/services/search/FindingService/v1?OPERATION-NAME=findItemsByCategory&SERVICE-VERSION=1.0.0&SECURITY-APPNAME=#{ENV['EBAY_API_KEY']}&RESPONSE-DATA-FORMAT=XML&REST-PAYLOAD&categoryId=#{category.category_id}&paginationInput.entriesPerPage=10")
         response_2["findItemsByCategoryResponse"]["searchResult"]["item"].each do |item|
             title = item["title"]
-            EcommerceApp::Listing.new(title)
+            category.listings << EcommerceApp::Listing.new(title)
+            # binding.pry
         end
     end
 end
