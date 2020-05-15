@@ -11,6 +11,8 @@ class EcommerceApp::CLI
         exit
     end
 
+################# ---- EBAY CATEGORIES ---- #################
+
     def category_list
         puts "\nHere is a list of eBay categories:".colorize(:blue)
         # puts "\nHit 'enter' or any key to list more eBay categories"
@@ -22,6 +24,9 @@ class EcommerceApp::CLI
         puts "\nPlease enter the category number you want to search for:".colorize(:green)
     end
 
+
+####### ---- EBAY LISTINGS FROM SELECTED CATEGORY ---- #######
+
     def listing_list
         category = EcommerceApp::Category.find(@user_input)
         puts "\nHere are the listings and their titles in category:'#{category.category_name}':".colorize(:light_blue)
@@ -32,6 +37,8 @@ class EcommerceApp::CLI
             puts "#{index}. #{item.title}"
         end
     end
+
+###############################################################
 
     def get_user_input
         @user_input = gets.strip.to_i
