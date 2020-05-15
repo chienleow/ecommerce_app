@@ -15,7 +15,6 @@ class EcommerceApp::API
         response_2["findItemsByCategoryResponse"]["searchResult"]["item"].each do |item|
             title = item["title"]
             category.listings << EcommerceApp::Listing.new(title)
-            # binding.pry
         end
     end
 end

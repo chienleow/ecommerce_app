@@ -10,7 +10,6 @@ class EcommerceApp::Listing
     end
 
     def save
-        @@all.clear if @@all.length > 10
         @@all << self
     end 
 
