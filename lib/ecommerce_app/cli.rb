@@ -1,8 +1,8 @@
 class EcommerceApp::CLI
 
     def start
-        puts "\nWelcome to The eCommerce Scouting App!".colorize(:magenta)
-        until @user_input_2 == "exit"
+        puts "\nWelcome to The eCommerce App!".colorize(:magenta)
+        until @user_input == "exit"
             category_list
             get_user_input
             listing_list
@@ -58,7 +58,7 @@ class EcommerceApp::CLI
 
     def next_step
         puts "\nType 'exit' to quit app or hit any key to choose a new category.".colorize(:yellow)
-        @user_input_2 = gets.strip
+        @user_input = gets.strip
     end
 
     def exit
