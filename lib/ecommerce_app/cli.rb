@@ -5,6 +5,7 @@ class EcommerceApp::CLI
         until @user_input == "exit"
             category_list
             get_user_input
+            get_user_input
             listing_list
             next_step
         end
