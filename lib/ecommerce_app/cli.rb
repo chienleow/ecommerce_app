@@ -15,7 +15,6 @@ class EcommerceApp::CLI
 
     def category_list
         puts "\nHere is a list of eBay categories:".colorize(:blue)
-        # puts "\nHit 'enter' or any key to list more eBay categories"
         # EcommerceApp::API.get_category ## NOTES: had to move this to category.rb to prevent duplicates
         categories = EcommerceApp::Category.all
         categories.each.with_index(1) do |item, index|
