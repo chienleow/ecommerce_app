@@ -5,7 +5,8 @@ class EcommerceApp::CLI
         until @user_input == "exit"
             category_list
             get_user_input
-            get_user_input
+            puts "\nPlease enter the amount of listings you would like to see. (50 listings or below)".colorize(:green)
+            get_user_input_2
             listing_list
             next_step
         end
@@ -55,6 +56,26 @@ class EcommerceApp::CLI
 
     def invalid_input
         puts "\nSorry, input error, please try again.".colorize(:red)
+    end
+
+    def get_user_input_2
+        @user_input_2 = gets.strip.to_i
+        until valid_input_2(@user_input_2)
+            invalid_input_2
+            @user_input_2 = gets.strip.to_i
+        end
+    end
+
+    def valid_input_2(user_input_2)
+        @user_input_2 <= 50
+    end
+
+    def invalid_input_2
+        puts "\nSorry for the inconvenience, the maximum amount of listings you can view is 50, please enter an amount equals to or less than 50."
+    end
+
+    def self.listing_amount
+        get_user_input_2
     end
 
     def next_step
