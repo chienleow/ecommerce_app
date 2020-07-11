@@ -1,6 +1,6 @@
 # EcommerceApp
 
-Welcome to the Ecommerce App! This is a Ruby gem with a CLI to view and navigate [eBay](https://www.ebay.com/) categories and the listing titles from each categories.
+Welcome to the Ecommerce App! This is a Ruby gem with a CLI to view and navigate [eBay](https://www.ebay.com/) categories and the listing titles from each category.
 
 ## Installation
 
