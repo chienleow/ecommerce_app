@@ -1,4 +1,4 @@
-# CLI Data Gem Project: Ecommerce App
+# CLI Data Gem Project: E-commerce App
 
 Ecommerce App is a [Ruby gem](https://guides.rubygems.org/what-is-a-gem/) with a CLI (command line interface) to view and navigate [eBay](https://www.ebay.com/) categories and the listing titles from each category.
 
