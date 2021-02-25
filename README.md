@@ -1,6 +1,6 @@
 # CLI Data Gem Project: E-commerce App
 
-Ecommerce App is a [Ruby gem](https://guides.rubygems.org/what-is-a-gem/) with a CLI (command line interface) to view and navigate [eBay](https://www.ebay.com/) categories and the listing titles from each category.
+E-commerce App is a [Ruby gem](https://guides.rubygems.org/what-is-a-gem/) with a CLI (command line interface) to view and navigate [eBay](https://www.ebay.com/) categories and the listing titles from each category.
 
 ## Built With
 - [Ruby](https://www.ruby-lang.org/en/)
@@ -23,7 +23,7 @@ Or install it yourself as:
 
 ## Usage
 
-To run Ecommerce App from your command line, type the below and follow the on screen prompts.
+To run E-commerce App from your command line, type the below and follow the on screen prompts.
 
     $ bin/executable
     
@@ -45,4 +45,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the EcommerceApp project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/ecommerce_app/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the E-commerce App project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/ecommerce_app/blob/master/CODE_OF_CONDUCT.md).
