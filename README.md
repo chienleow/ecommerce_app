@@ -5,6 +5,9 @@ E-commerce App is a [Ruby gem](https://guides.rubygems.org/what-is-a-gem/) with 
 ## Built With
 - [Ruby](https://www.ruby-lang.org/en/)
 
+## Demo
+- [Video Walkthrough](https://youtu.be/kVSiESt0SWw)
+
 ## Installation
 
 Add this line to your application's Gemfile:
